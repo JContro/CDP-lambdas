@@ -4,7 +4,7 @@ on:
   # Trigger the workflow on push
   # but only for the main branch
   pull_request:
-    types: [closed]
+    types: [merged]
 
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
     - name: checkout repo content
       uses: actions/checkout@v2 # checkout the repository content to github runner.
     - name: It does something
-      run: echo "It worked?"
+      run: echo "It worked? merged"
     # - name: Zip script
     #   run: "zip ./test-ft.zip lambda_function.py"
     # - name: Upload to AWS 
