@@ -5,6 +5,7 @@ on:
   # but only for the main branch
   pull_request:
     types: [closed]
+    branches: [b1]
  
 jobs:
   build:
